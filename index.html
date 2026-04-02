@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo con errores</title>
+    <p>
+        Faltaba cerrar la etiqueta <title></title>
+    </p>
+</head>
+<body>
+    <h1>Bienvenidos a mi página</h1>
+    <p>El h1 cerraba con h2 en lugar de h1</p>
+
+    <p>
+        Este párrafo tiene una etiqueta
+        <span style="color: red;">sin cerrar correctamente</span>.
+        La etiqueta span no estaba cerrada
+        El p tampoco estaba cerrado
+    </p>
+
+    <img src="imagenes/logo.png" alt="Logo HTML" width="200">
+    <p>El atributo alt de la imagen debía ir entre comillas</p>
+
+    <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    <p>target="blank" debía ser target="_blank"</p>
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <p>La lista abría con ul pero cerraba con ol
+        Los li no estaban cerrados
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <p>En la tabla faltaba cerrar la primera fila tr</p>
+</body>
+</html>
