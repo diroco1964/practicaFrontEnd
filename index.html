@@ -15,6 +15,8 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#cassettes">Servicios</a></li>
         <li><a href="#fanzines">Contacto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#intereses">Contacto</a></li>
     </ul>
 
     <h2 id="inicio">Inicio</h2>
@@ -26,7 +28,7 @@
     <h2 id="fanzines">Fanzines</h2>
     <p>Esta es la sección de Fanzines.</p>
 
-     <h1>Formulario de Contacto</h1>
+     <h1 id="Contacto">Formulario de Contacto</h1>
 
 
      <!-- Formulario - label para campo -->
@@ -42,6 +44,28 @@
 
         <button type="submit">Enviar</button>
         <button type="reset">Limpiar</button>
+    </form>
+
+    <form id="intereses">
+
+         <p>Intereses:</p>
+        <input type="checkbox" id="cassettes" name="intereses" value="cassettes">
+        <label for="cassettes">Cassettes</label><br>
+
+        <input type="checkbox" id="discos" name="intereses" value="discos">
+        <label for="discos">Discos</label><br>
+
+        <input type="checkbox" id="fanzines" name="intereses" value="fanzines">
+        <label for="fanzines">Fanzines</label><br><br>
+
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais">
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="chile">Chile</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
     </form>
 
 </body>
