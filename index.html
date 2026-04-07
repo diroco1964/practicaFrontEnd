@@ -77,39 +77,6 @@
             </video>
         </aside>
 
-        <section id="contacto">
-            <form>
-                <h3>Contacto e Intereses</h3>
-
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br><br>
-
-                <label for="apellido">Apellido:</label><br>
-                <input type="text" id="apellido" name="apellido"><br><br>
-
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo"><br><br>
-                <input type="checkbox" id="cassettes" name="intereses" value="cassettes">
-                <label for="cassettes">Cassettes</label><br>
-
-                <input type="checkbox" id="discos" name="intereses" value="discos">
-                <label for="discos">Discos</label><br>
-
-                <input type="checkbox" id="fanzines" name="intereses" value="fanzines">
-                <label for="fanzines">Fanzines</label><br><br>
-
-                <label for="pais">País:</label><br>
-                <select id="pais" name="pais">
-                    <option value="argentina">Argentina</option>
-                    <option value="uruguay">Uruguay</option>
-                    <option value="chile">Chile</option>
-                </select><br><br>
-
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
-            </form>
-
-        </section>
 
         <section id="horarios">
             <h3>Horario Actividades</h3>
@@ -149,6 +116,27 @@
                     <td>Taller abierto</td>
                 </tr>
             </table>
+        </section>
+
+        <section id="contacto">
+            <h3>Contacto e Intereses</h3>
+            <form>
+                <label for="usuario">Nombre de usuario:</label><br>
+                <input type="text" id="usuario" name="usuario" required minlength="4" maxlength="12"
+                    placeholder="Tu nombre o alias"><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com"><br><br>
+
+                <label for="clave">Contraseña:</label><br>
+                <input type="password" id="clave" name="clave" required minlength="6" maxlength="12"
+                    placeholder="Mínimo 6 caracteres"><br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label><br>
+                <input type="date" id="fecha" name="fecha" min="1950-01-01" max="2020-12-31" required><br><br>
+
+                <button type="submit">Registrarse</button>
+            </form>
 
         </section>
 
