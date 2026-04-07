@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Configuración de caracteres -->
     <meta charset="UTF-8">
-     <!-- Título de la pestaña -->
+    <!-- Título de la pestaña -->
     <title>El Basurero del Ruido</title>
 </head>
+
 <body>
-    <!-- Encabezado principal de la página -->
-    <h1>El Basurero del Ruido</h1>
+    <header>
+        <h1>El Basurero del Ruido</h1>
+        <p>Distribuidora y archivo de cultura DIY.</p>
+    </header>
 
-     <!-- Lista de enlaces -->
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#cassettes">Servicios</a></li>
-        <li><a href="#fanzines">Fanzines</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#intereses">Intereses</a></li>
-    </ul>
+    <nav>
+        <a href="#inicio">Inicio</a> |
+        <a href="#cassettes">Cassettes</a> |
+        <a href="#fanzines">Fanzines</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-    <h2 id="inicio">Inicio</h2>
-    <p>Hazlo tu mismo.</p>
+    <main>
 
-    <h2 id="casettes">Cassettes</h2>
-    <p>Ediciones en Cinta Magnetica.</p>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>El Basurero del Ruido reúne material independiente, ediciones caseras y publicaciones autogestionadas.
+            </p>
+        </section>
 
-    <h2 id="fanzines">Fanzines</h2>
-    <p>Esta es la sección de Fanzines.</p>
+        <section id="cassettes">
+            <h2>Cassettes</h2>
 
-     <h1 id="Contacto">Formulario de Contacto</h1>
+            <article>
+                <h3>Ediciones limitadas</h3>
+                <p>Cassettes grabados artesanalmente en pequeñas cantidades.</p>
+            </article>
 
+            <article>
+                <h3>Bandas underground</h3>
+                <p>Material de punk, hardcore, noise y otros géneros independientes.</p>
+            </article>
+        </section>
 
-     <!-- Formulario - label para campo -->
-    <form>
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br><br>
+        <section id="fanzines">
+            <h2>Fanzines</h2>
 
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido"><br><br>
+            <article>
+                <h3>Publicaciones DIY</h3>
+                <p>Fanzines fotocopiados sobre música, política y cultura alternativa.</p>
+            </article>
 
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="email" id="correo" name="correo"><br><br>
+            <article>
+                <h3>Archivo de publicaciones</h3>
+                <p>Compilación de números antiguos y nuevas ediciones.</p>
+            </article>
+        </section>
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-    </form>
+        <aside>
+            <h2>Información adicional</h2>
+            <p>Próximamente habrá una feria de intercambio de discos, cassettes y fanzines.</p>
+        </aside>
 
-    <form id="intereses">
+        <section id="contacto">
+            <form>
+                <h3>Contacto e Intereses</h3>
 
-         <p>Intereses:</p>
-        <input type="checkbox" id="cassettes" name="intereses" value="cassettes">
-        <label for="cassettes">Cassettes</label><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
 
-        <input type="checkbox" id="discos" name="intereses" value="discos">
-        <label for="discos">Discos</label><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido"><br><br>
 
-        <input type="checkbox" id="fanzines" name="intereses" value="fanzines">
-        <label for="fanzines">Fanzines</label><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo"><br><br>
+                <input type="checkbox" id="cassettes" name="intereses" value="cassettes">
+                <label for="cassettes">Cassettes</label><br>
 
-        <label for="pais">País:</label><br>
-        <select id="pais" name="pais">
-            <option value="argentina">Argentina</option>
-            <option value="uruguay">Uruguay</option>
-            <option value="chile">Chile</option>
-        </select><br><br>
+                <input type="checkbox" id="discos" name="intereses" value="discos">
+                <label for="discos">Discos</label><br>
 
-        <button type="submit">Enviar</button>
-    </form>
+                <input type="checkbox" id="fanzines" name="intereses" value="fanzines">
+                <label for="fanzines">Fanzines</label><br><br>
 
+                <label for="pais">País:</label><br>
+                <select id="pais" name="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="chile">Chile</option>
+                </select><br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>El Basurero del Ruido - Cultura DIY y autogestión.</p>
+    </footer>
 </body>
+
 </html>
