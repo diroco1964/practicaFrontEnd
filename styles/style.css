@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+/* Ejercicio 1
+Diseño de Título Principal
+Crear un encabezado <h1> con fuente personalizada desde Google Fonts, color
+degradado y sombra de texto. */
+
+h1 {
+    color: #5a1ac2;
+    font-family: "VT323", monospace;
+    text-shadow: 3px 3px 6px rgba(185, 181, 219, 0.4);
+    background: linear-gradient(to right, #6102f9, #6f0290);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Ejercicio 2
+Estilos Condicionales
+Aplicar un color distinto a los párrafos impares usando la 
+pseudoclase :nthchild(odd). */
+
+p {
+    font-family:"VT323", monospace;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+p:nth-child(odd) {
+    color: #5a1ac2; 
+    background-color: #f0f0f0; 
+}
+
+/* Ejercicio 3
+Botón Interactivo
+Diseñar un botón que cambie de color, tamaño y sombra al pasar el mouse y al
+hacer clic.*/
+
+#btnVolver {
+    font-family:"VT323", monospace;
+    display: block;
+    background-color: rgb(157, 152, 236);
+    margin: 1rem auto;
+    border: .15rem #600ec5 solid;
+    border-radius: .255rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#btnVolver:hover {
+    background-color: rgb(236, 234, 247);
+    width: 13rem;
+    height: 2rem;
+    box-shadow: 0.1rem 0.2rem 0.25rem rgba(0, 0, 0, 0.5);
+    transition: ease .5s;
+    
+}
+
+#btnVolver:active {
+    border: .25rem #aaa solid;
+}
+
+#btnVolver a {
+    text-decoration: none;
+}
+
+#aBtn {
+    color: #0b0b0b;
+}
+
+/* Ejercicio 4
+Caja Informativa
+Crear un div con borde redondeado, padding interno, fondo con transparencia y
+texto centrado.*/
+/* Ejercicio 4: Caja Informativa */
+.caja-info {
+    border: 0.15rem solid #5a1ac2;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(90, 26, 194, 0.037); 
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 40rem; 
+}
+
+.caja-info p {
+    background-color: transparent;             
+    font-weight: normal;          
+    margin: 0;                    
+}
+
+
