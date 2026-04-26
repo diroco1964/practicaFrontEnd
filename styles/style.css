@@ -88,4 +88,38 @@ texto centrado.*/
     margin: 0;                    
 }
 
+/* Ejercicio 5
+Comparación de Box Sizing */
+/* Crear dos cajas con mismo ancho y padding, una con box-sizing: content-box y
+otra con border-box. Explicar la diferencia. */
+
+/* Box Model */
+
+.contenedor-boxModel {
+   display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border: 3px dashed #333; 
+    margin-top: 20px;
+}
+
+ .content-box, .border-box {
+    width: 250px;
+    padding: 25px;
+    border: 8px solid #000; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.content-box {
+   background-color: #7b34a8; 
+    color: #fff;
+    box-sizing: content-box;
+}
+
+.border-box {
+   background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+}   
 
