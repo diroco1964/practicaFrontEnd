@@ -110,3 +110,20 @@ opacidad progresiva.*/
 .card {
     animation: entradaDesdeIzquierda 0.7s ease-out forwards;
 }
+
+/*Ejercicio 9
+Transición de Imagen
+Diseñar una imagen que se agrande suavemente al pasar el mouse usando
+transition y transform: scale.*/
+.img-transicion  {
+    overflow: hidden; 
+    width: fit-content;
+}
+.img-transicion img {
+    display: block;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+.img-transicion:hover img {
+    transform: scale(1.1); 
+}
