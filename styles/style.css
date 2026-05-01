@@ -155,4 +155,43 @@ borde y cambio de color al pasar el mouse.*/
     color: white;
 }
 
+/*Ejercicio 12
+Tabla Estilizada
+Crear una tabla con encabezado fijo, filas alternadas de color y efecto hover
+en cada fila.*/
+/* Contenedor con altura fija para permitir el scroll si hay muchos datos */
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse; 
+     font-family: "VT323", monospace;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    z-index: 10;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e2e2e2;
+    transition: background-color 0.2s ease;
+}

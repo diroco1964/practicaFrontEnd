@@ -67,12 +67,16 @@
             </div>
         </section>
 
-        <ul class="lista-separada">
-            <li>Evento 1</li>
-            <li>Evento 2</li>
-            <li>Evento 3</li>
-            <li>Evento 4</li>
-        </ul>
+
+        <div>
+            <ul class="lista-separada">
+                <li>Evento 1</li>
+                <li>Evento 2</li>
+                <li>Evento 3</li>
+                <li>Evento 4</li>
+            </ul>
+        </div>
+
 
 
 
@@ -90,64 +94,47 @@
 
         <section id="horarios">
             <h3>Horario Actividades</h3>
-            <table border="1">
-                <tr>
-                    <th>Horario</th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miércoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                </tr>
-
-                <tr>
-                    <td>14:00 - 16:00</td>
-                    <td>Armado de fanzines</td>
-                    <td>Diseño de tapas</td>
-                    <td rowspan="2">Grabación de cassettes</td>
-                    <td>Encuadernación</td>
-                    <td>Distribución</td>
-                </tr>
-
-                <tr>
-                    <td>16:00 - 18:00</td>
-                    <td>Fotocopias</td>
-                    <td>Recorte y collage</td>
-                    <td>Feria de publicaciones</td>
-                    <td>Escucha colectiva</td>
-                </tr>
-
-                <tr>
-                    <td>18:00 - 20:00</td>
-                    <td colspan="2">Preparación de feria</td>
-                    <td>Venta de discos</td>
-                    <td>Archivo DIY</td>
-                    <td>Taller abierto</td>
-                </tr>
-            </table>
+            <div class="table-container"> 
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14:00 - 16:00</td>
+                            <td>Armado de fanzines</td>
+                            <td>Diseño de tapas</td>
+                            <td>Grabación de cassettes</td>
+                            <td>Encuadernación</td>
+                            <td>Distribución</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 18:00</td>
+                            <td>Fotocopias</td>
+                            <td>Recorte y collage</td>
+                            <td>Feria de publicaciones</td>
+                            <td>Escucha colectiva</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 - 20:00</td>
+                            <td colspan="2">Preparación de feria</td>
+                            <td>Venta de discos</td>
+                            <td>Archivo DIY</td>
+                            <td>Taller abierto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="contacto">
-            <h3>Contacto e Intereses</h3>
-            <form>
-                <label for="usuario">Nombre de usuario:</label><br>
-                <input type="text" id="usuario" name="usuario" required minlength="4" maxlength="12"
-                    placeholder="Tu nombre o alias"><br><br>
 
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com"><br><br>
-
-                <label for="clave">Contraseña:</label><br>
-                <input type="password" id="clave" name="clave" required minlength="6" maxlength="12"
-                    placeholder="Mínimo 6 caracteres"><br><br>
-
-                <label for="fecha">Fecha de nacimiento:</label><br>
-                <input type="date" id="fecha" name="fecha" min="1950-01-01" max="2020-12-31" required><br><br>
-
-                <button type="submit">Registrarse</button>
-            </form>
-
-        </section>
 
         <p id="final">Gracias por visitar El Basurero del Ruido.</p>
 
