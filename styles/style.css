@@ -16,6 +16,16 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+      font-family: "VT323", monospace;
+}
+
+p {
+    font-family: "VT323", monospace;
+    color: #333;
+    line-height: 1.6;
+}
+
 /*Ejercicio 6: Menú Horizontal con Flexbox */
 /* Diseñar un menú de navegación con <ul> y <li> usando display: flex, separación
 entre ítems y alineación centrada.
@@ -37,4 +47,47 @@ nav a {
 
 nav a:hover {
     color: rgb(83, 49, 179);
+}
+
+/*Ejercicio 7: Tarjetas Responsivas
+Crear tres tarjetas con imagen, título y descripción. Usar grid para
+distribuirlas y media queries para adaptar a móvil.*/
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content p {
+    font-family: "VT323", monospace;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
 }
