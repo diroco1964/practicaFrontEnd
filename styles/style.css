@@ -91,3 +91,22 @@ distribuirlas y media queries para adaptar a móvil.*/
     }
 
 }
+
+/*Ejercicio 8
+Animación de Entrada
+Crear una animación que haga que un elemento aparezca desde la izquierda con
+opacidad progresiva.*/
+
+@keyframes entradaDesdeIzquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);    
+    }
+}
+.card {
+    animation: entradaDesdeIzquierda 0.7s ease-out forwards;
+}
