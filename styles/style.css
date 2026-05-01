@@ -127,3 +127,19 @@ transition y transform: scale.*/
 .img-transicion:hover img {
     transform: scale(1.1); 
 }
+
+/*Ejercicio 10
+Contenedor con Fondo Compuesto
+Crear un div con fondo que combine color sólido, imagen centrada y repetición
+desactivada.*/
+
+.contenedor-compuesto {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0 !important; /* El color que ya vemos */
+    background-image: url('/img/BONDAGE\ CASSETTE.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid black;
+}
